@@ -1,37 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script defer src="script.js"></script>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="destbg bghelper">
+      <!-- mobile nav -->
+      <div class="mobile-nav-style" id="mobilenav">
+        <img
+          src="assets/shared/icon-close.svg"
+          alt="close"
+          class="w-6 h-6 ml-auto my-8 mr-7 cursor-pointer"
+          id="close"
+        />
+        <ul class="flex flex-col justify-center gap-8">
+          <li class="activesm">
+            <a href="#"><span>00</span> Home</a>
+          </li>
+          <li>
+            <a href="#"><span>01</span> Destination</a>
+          </li>
+          <li>
+            <a href="#"><span>02</span> Crew</a>
+          </li>
+          <li>
+            <a href="#"><span>03</span> Technology</a>
+          </li>
+        </ul>
+      </div>
 
-  01 Pick your destination
+      <nav>
+        <img
+          src="assets/shared/logo.svg"
+          alt="logo"
+          class="cursor-pointer w-10 h-10 md:w-12 md:h-12"
+        />
+        <img
+          src="assets/shared/icon-hamburger.svg"
+          alt="icon"
+          class="w-6 h-5 cursor-pointer md:hidden"
+          id="opennav"
+        />
 
-  Moon
-  Mars
-  Europa
-  Titan
+        <!-- laptop nav-->
+        <ul id="labnav">
+          <li class="activebg">
+            <a href="#"><span>00</span> Home</a>
+          </li>
+          <li>
+            <a href="#"><span>01</span> Destination</a>
+          </li>
+          <li>
+            <a href="#"><span>02</span> Crew</a>
+          </li>
+          <li>
+            <a href="#"><span>03</span> Technology</a>
+          </li>
+        </ul>
+      </nav>
 
-  Moon
+      <!-- main-content -->
+      <div
+        class="h-full p-6 md:p-10 lg:py-12 lg:px-0 flex flex-col items-center lg:mx-auto gap-6 text-light md:text-start lg:max-w-fit"
+      >
+        <!-- title -->
+        <p class="w-full uppercase text-center md:text-xl md:text-left">
+          <span class="mr-6">01</span>Pick your destination
+        </p>
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
+        <!-- content -->
+        <div class="flex flex-col items-center gap-14 w-full lg:flex-row">
+          <!-- moon -->
+          <img
+            src="assets/destination/image-moon.webp"
+            alt="moon"
+            class="w-moonw h-moonh my-5 lg:my-0 md:w-72 md:h-72 lg:w-moonwlg lg:h-moonhlg"
+          />
 
-  Avg. distance
-  384,400 km
+          <!-- Explanation -->
+          <div class="flex flex-col items-center gap-8" id="explanation">
+            <!-- tabs -->
+            <ul
+              class="uppercase flex items-center justify-center gap-8 text-sm md:text-base lg:justify-start w-full"
+            >
+              <li class="activtab"><a href="#">Moon</a></li>
+              <li><a href="#">Mars</a></li>
+              <li><a href="#">Europa</a></li>
+              <li><a href="#">Titan</a></li>
+            </ul>
 
-  Est. travel time
-  3 days
-</body>
+            <!-- text -->
+            <div
+              class="flex flex-col items-center lg:items-start gap-4 pb-10 relative after:absolute after:content-[''] after:bottom-0 after:w-full after:h-1 after:bg-slate-400"
+            >
+              <strong
+                class="text-56 uppercase text-white md:text-80 lg:text-8xl"
+                >moon</strong
+              >
+              <p
+                class="text-15 text-center lg:text-start md:text-base lg:text-lg max-w-446"
+              >
+                See our planet as you’ve never seen it before. A perfect
+                relaxing trip away to help regain perspective and come back
+                refreshed. While you’re there, take in some history by visiting
+                the Luna 2 and Apollo 11 landing sites.
+              </p>
+            </div>
+
+            <!-- statsics -->
+            <div
+              class="statsics w-full flex flex-col md:flex-row items-center md:justify-between gap-3"
+            >
+              <!-- destance -->
+              <div class="flex flex-col items-center gap-3">
+                <small class="">Avg. distance</small>
+                <strong class="">384,400 km</strong>
+              </div>
+
+              <!-- traveltime -->
+              <div class="flex flex-col items-center gap-3">
+                <small>Est. travel time</small>
+                <strong> 3 days</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

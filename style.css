@@ -31,7 +31,6 @@
     font-family: "Bellefair", sans-serif;
     line-height: 1;
     font-weight: 400;
-    height: 100vh;
   }
   ul li a {
     @apply uppercase;
@@ -49,8 +48,24 @@
   }
 }
 @layer components {
+  .bghelper {
+    @apply w-full h-full bg-center bg-cover relative;
+  }
+
+  .homebg {
+    @apply bg-homemob md:bg-hometabl lg:bg-homedesk;
+  }
+
+  .destbg {
+    @apply bg-destmob md:bg-desttabl lg:bg-destdesk;
+  }
+
+  .mobile-nav-style {
+    @apply absolute h-full w-64 glassmorphism right-0 flex flex-col gap-12 pl-8 hiddennav md:hidden;
+  }
+
   nav {
-    @apply flex p-6 md:pr-0 justify-between items-center md:gap-32 md:py-0;
+    @apply flex p-6 md:pr-0 md:py-0 justify-between items-center md:gap-32 lg:pt-10;
   }
 
   nav ul {
@@ -84,5 +99,27 @@
   }
   .activesm {
     @apply before:absolute before:content-['']  before:right-0 before:h-full before:w-1 before:bg-white z-10;
+  }
+
+  #explanation ul li {
+    @apply h-8 relative;
+  }
+
+  #explanation ul li:hover {
+    @apply after:absolute after:bottom-0 after:w-full after:h-1 after:bg-white/50;
+  }
+
+  .activtab {
+    @apply before:absolute before:bottom-0 before:w-full before:h-1 before:bg-white;
+  }
+
+  .statsics {
+    @apply uppercase;
+  }
+  .statsics strong {
+    @apply text-28;
+  }
+  .statsics small {
+    @apply text-sm;
   }
 }

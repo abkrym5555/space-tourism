@@ -11,12 +11,19 @@ module.exports = {
         homemob: "url('./assets/home/background-home-mobile.jpg')",
         hometabl: "url('./assets/home/background-home-tablet.jpg')",
         homedesk: "url('./assets/home/background-home-desktop.jpg')",
+        destmob:
+          "url('./assets/destination/background-destination-mobile.jpg')",
+        desttabl:
+          "url('./assets/destination/background-destination-tablet.jpg')",
+        destdesk:
+          "url('./assets/destination/background-destination-desktop.jpg')",
       },
       gap: {
         32: "-2rem",
       },
       maxWidth: {
         46: "46rem",
+        446: "27.8125rem",
       },
       letterSpacing: {
         15: "2px",
@@ -34,13 +41,25 @@ module.exports = {
             letterSpacing: ".125em",
           },
         ],
+        56: "3.5rem",
+        28: "1.75rem",
+        15: [
+          "15px",
+          {
+            lineHeight: "1.8",
+          },
+        ],
       },
       height: {
         374: "23.375rem",
         272: "272px",
+        moonh: "150px",
+        moonhlg: "25rem",
       },
       width: {
         272: "272px",
+        moonw: "150px",
+        moonwlg: "25rem",
       },
     },
   },
