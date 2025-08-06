@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "Bellefair";
+    src: url("fonts/Bellefair-Regular.ttf");
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -21,6 +26,7 @@
   }
 
   body {
+    font-family: "Bellefair", sans-serif;
     box-sizing: border-box;
     font-family: "Bellefair", sans-serif;
     line-height: 1;
