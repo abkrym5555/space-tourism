@@ -72,29 +72,21 @@
       </nav>
 
       <!-- main-content -->
-      <div
-        class="h-full p-6 md:p-10 lg:py-12 lg:px-0 flex flex-col items-center lg:mx-auto gap-6 text-light md:text-start lg:max-w-fit"
-      >
+      <div class="main-content">
         <!-- title -->
-        <p class="w-full uppercase text-center md:text-xl md:text-left">
+        <p class="main-content__title">
           <span class="mr-6">01</span>Pick your destination
         </p>
 
         <!-- content -->
-        <div class="flex flex-col items-center gap-14 w-full lg:flex-row">
+        <div class="main-content__content">
           <!-- moon -->
-          <img
-            src="assets/destination/image-moon.webp"
-            alt="moon"
-            class="w-moonw h-moonh my-5 lg:my-0 md:w-72 md:h-72 lg:w-moonwlg lg:h-moonhlg"
-          />
+          <img src="assets/destination/image-moon.webp" alt="moon" />
 
           <!-- Explanation -->
-          <div class="flex flex-col items-center gap-8" id="explanation">
+          <div class="explanation" id="explanation">
             <!-- tabs -->
-            <ul
-              class="uppercase flex items-center justify-center gap-8 text-sm md:text-base lg:justify-start w-full"
-            >
+            <ul class="explanation__tabs">
               <li class="activtab"><a href="#">Moon</a></li>
               <li><a href="#">Mars</a></li>
               <li><a href="#">Europa</a></li>
@@ -102,16 +94,9 @@
             </ul>
 
             <!-- text -->
-            <div
-              class="flex flex-col items-center lg:items-start gap-4 pb-10 relative after:absolute after:content-[''] after:bottom-0 after:w-full after:h-1 after:bg-slate-400"
-            >
-              <strong
-                class="text-56 uppercase text-white md:text-80 lg:text-8xl"
-                >moon</strong
-              >
-              <p
-                class="text-15 text-center lg:text-start md:text-base lg:text-lg max-w-446"
-              >
+            <div class="explanation__text">
+              <strong>moon</strong>
+              <p>
                 See our planet as you’ve never seen it before. A perfect
                 relaxing trip away to help regain perspective and come back
                 refreshed. While you’re there, take in some history by visiting
@@ -120,17 +105,15 @@
             </div>
 
             <!-- statsics -->
-            <div
-              class="statsics w-full flex flex-col md:flex-row items-center md:justify-between gap-3"
-            >
+            <div class="statsics">
               <!-- destance -->
-              <div class="flex flex-col items-center gap-3">
+              <div class="statsics__dest">
                 <small class="">Avg. distance</small>
                 <strong class="">384,400 km</strong>
               </div>
 
               <!-- traveltime -->
-              <div class="flex flex-col items-center gap-3">
+              <div class="statsics__dest">
                 <small>Est. travel time</small>
                 <strong> 3 days</strong>
               </div>

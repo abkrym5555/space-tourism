@@ -114,12 +114,50 @@
   }
 
   .statsics {
-    @apply uppercase;
+    @apply uppercase w-full flex flex-col md:flex-row items-center md:justify-between gap-3;
   }
+  .statsics__dest {
+    @apply flex flex-col items-center gap-3;
+  }
+
   .statsics strong {
     @apply text-28;
   }
+
   .statsics small {
     @apply text-sm;
+  }
+  .main-content {
+    @apply h-full p-6 md:p-10 lg:py-12 lg:px-0 flex flex-col items-center 
+    lg:mx-auto gap-6 text-light md:text-start lg:max-w-fit;
+  }
+
+  .main-content__title {
+    @apply w-full uppercase text-center md:text-xl md:text-left;
+  }
+
+  .main-content__content {
+    @apply flex flex-col items-center gap-14 w-full lg:flex-row;
+  }
+  .main-content__content img {
+    @apply w-moonw h-moonh my-5 lg:my-0 md:w-72 md:h-72 lg:w-moonwlg lg:h-moonhlg;
+  }
+
+  .explanation {
+    @apply flex flex-col items-center gap-8;
+  }
+
+  .explanation__tabs {
+    @apply uppercase flex items-center justify-center gap-8 text-sm md:text-base lg:justify-start w-full;
+  }
+  .explanation__text {
+    @apply flex flex-col items-center lg:items-start gap-4 pb-10 relative 
+    after:absolute after:content-[''] after:bottom-0 after:w-full after:h-1 after:bg-slate-400;
+  }
+  .explanation__text strong {
+    @apply text-56 uppercase text-white md:text-80 lg:text-8xl;
+  }
+  .explanation__text p {
+    @apply text-15 text-center lg:text-start md:text-base lg:text-lg max-w-446;
   }
 }
