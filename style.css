@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    box-sizing: border-box;
+    font-family: "Bellefair", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    height: 100vh;
+  }
+  ul li a {
+    @apply uppercase;
+  }
+  ul li a {
+    @apply flex gap-3 items-center;
+  }
+
+  .glassmorphism {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+@layer components {
+  nav {
+    @apply flex p-6 md:pr-0 justify-between items-center md:gap-32 md:py-0;
+  }
+
+  nav ul {
+    @apply hidden md:flex max-w-46 items-center justify-end grow px-10 h-24 w-full gap-12 ml-7
+     relative before:absolute before:content-[''] before:top-0 before:left-0 before:w-full before:h-full lg:before:blur-[2px] before:bg-gray-600/30;
+  }
+
+  nav ul li {
+    @apply uppercase z-10 cursor-pointer relative;
+  }
+  nav ul li:hover {
+    @apply before:absolute  before:w-full before:h-1 before:bg-white/50 before:top-14 before:z-0;
+  }
+
+  ul li span {
+    @apply text-lg font-bold text-white;
+  }
+  .activebg {
+    @apply before:absolute before:w-full before:h-1 before:bg-white before:top-14;
+  }
+
+  .hiddennav {
+    @apply translate-x-full;
+  }
+
+  #mobilenav li {
+    @apply relative;
+  }
+  #mobilenav li a:hover {
+    @apply before:absolute before:content-['']  before:right-0 before:h-full before:w-1 before:bg-white/50;
+  }
+  .activesm {
+    @apply before:absolute before:content-['']  before:right-0 before:h-full before:w-1 before:bg-white z-10;
+  }
+}
