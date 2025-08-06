@@ -1,37 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="destbg bghelper">
+      <!-- mobile nav -->
+      <div class="mobile-nav-style" id="mobilenav">
+        <img
+          src="assets/shared/icon-close.svg"
+          alt="close"
+          class="w-6 h-6 ml-auto my-8 mr-7 cursor-pointer"
+          id="close"
+        />
+        <ul class="flex flex-col justify-center gap-8">
+          <li class="activesm">
+            <a href="#"><span>00</span> Home</a>
+          </li>
+          <li>
+            <a href="#"><span>01</span> Destination</a>
+          </li>
+          <li>
+            <a href="#"><span>02</span> Crew</a>
+          </li>
+          <li>
+            <a href="#"><span>03</span> Technology</a>
+          </li>
+        </ul>
+      </div>
+
+      <nav>
+        <img
+          src="assets/shared/logo.svg"
+          alt="logo"
+          class="cursor-pointer w-10 h-10 md:w-12 md:h-12"
+        />
+        <img
+          src="assets/shared/icon-hamburger.svg"
+          alt="icon"
+          class="w-6 h-5 cursor-pointer md:hidden"
+          id="opennav"
+        />
+
+        <!-- laptop nav-->
+        <ul id="labnav">
+          <li class="activebg">
+            <a href="#"><span>00</span> Home</a>
+          </li>
+          <li>
+            <a href="#"><span>01</span> Destination</a>
+          </li>
+          <li>
+            <a href="#"><span>02</span> Crew</a>
+          </li>
+          <li>
+            <a href="#"><span>03</span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- main-content -->
+      <div class="main-content">
+        <!-- title -->
+        <p class="main-content__title">
+          <span class="mr-6">01</span>Pick your destination
+        </p>
+
+        <!-- content -->
+        <div class="main-content__content">
+          <!-- moon -->
+          <img src="assets/destination/image-europa.webp" alt="europa" />
+
+          <!-- Explanation -->
+          <div class="explanation" id="explanation">
+            <!-- tabs -->
+            <ul class="explanation__tabs">
+              <li><a href="#">Moon</a></li>
+              <li><a href="#">Mars</a></li>
+              <li><a href="#">Europa</a></li>
+              <li class="activtab"><a href="#">Titan</a></li>
+            </ul>
+
+            <!-- text -->
+            <div class="explanation__text">
+              <strong>Titan</strong>
+              <p>
+                The only moon known to have a dense atmosphere other than Earth,
+                Titan is a home away from home (just a few hundred degrees
+                colder!). As a bonus, you get striking views of the Rings of
+                Saturn.
+              </p>
+            </div>
+
+            <!-- statsics -->
+            <div class="statsics">
+              <!-- destance -->
+              <div class="statsics__dest">
+                <small class="">Avg. distance</small>
+                <strong class=""> 1.6 bil. km</strong>
+              </div>
+
+              <!-- traveltime -->
+              <div class="statsics__dest">
+                <small>Est. travel time</small>
+                <strong> 7 years</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+
   
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Titan
-
-  The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.
+  
 
   Avg. distance
-  1.6 bil. km
+
 
   Est. travel time
-  7 years
-</body>
+  --></body>
 </html>
