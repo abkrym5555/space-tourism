@@ -59,6 +59,9 @@
   .destbg {
     @apply bg-destmob md:bg-desttabl lg:bg-destdesk;
   }
+  .crewbg {
+    @apply bg-cerwmob md:bg-cerwtabl lg:bg-cerwdesk;
+  }
 
   .mobile-nav-style {
     @apply absolute h-full w-64 glassmorphism right-0 flex flex-col gap-12 pl-8 hiddennav md:hidden;
@@ -159,5 +162,11 @@
   }
   .explanation__text p {
     @apply text-15 text-center lg:text-start md:text-base lg:text-lg max-w-446;
+  }
+  .dot {
+    @apply w-dotsm h-dotsm bg-white/20 rounded-full cursor-pointer hover:bg-white/40;
+  }
+  .activedot {
+    @apply bg-white;
   }
 }

@@ -17,6 +17,9 @@ module.exports = {
           "url('./assets/destination/background-destination-tablet.jpg')",
         destdesk:
           "url('./assets/destination/background-destination-desktop.jpg')",
+        cerwmob: "url('./assets/crew/background-crew-mobile.jpg')",
+        cerwtabl: "url('./assets/crew/background-crew-tablet.jpg')",
+        cerwdesk: "url('./assets/crew/background-crew-desktop.jpg')",
       },
       gap: {
         32: "-2rem",
@@ -29,6 +32,8 @@ module.exports = {
         15: "2px",
       },
       fontSize: {
+        32: "2rem",
+        40: "2.5rem",
         28: [
           "1.75rem",
           {
@@ -55,11 +60,16 @@ module.exports = {
         272: "272px",
         moonh: "150px",
         moonhlg: "25rem",
+        dotsm: "10px",
+        340: "340px",
+        crwimgh: "560px",
       },
       width: {
         272: "272px",
         moonw: "150px",
         moonwlg: "25rem",
+        dotsm: "10px",
+        maxcreww: "1110px",
       },
     },
   },
