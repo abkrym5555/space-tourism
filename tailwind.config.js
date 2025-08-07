@@ -11,15 +11,22 @@ module.exports = {
         homemob: "url('./assets/home/background-home-mobile.jpg')",
         hometabl: "url('./assets/home/background-home-tablet.jpg')",
         homedesk: "url('./assets/home/background-home-desktop.jpg')",
+
         destmob:
           "url('./assets/destination/background-destination-mobile.jpg')",
         desttabl:
           "url('./assets/destination/background-destination-tablet.jpg')",
         destdesk:
           "url('./assets/destination/background-destination-desktop.jpg')",
+
         cerwmob: "url('./assets/crew/background-crew-mobile.jpg')",
         cerwtabl: "url('./assets/crew/background-crew-tablet.jpg')",
         cerwdesk: "url('./assets/crew/background-crew-desktop.jpg')",
+
+        techmob: "url('./assets/technology/background-technology-mobile.jpg')",
+        techtabl: "url('./assets/technology/background-technology-tablet.jpg')",
+        techdesk:
+          "url('./assets/technology/background-technology-desktop.jpg')",
       },
       gap: {
         32: "-2rem",

@@ -582,6 +582,7 @@ body {
   font-family: "Bellefair", sans-serif;
   line-height: 1;
   font-weight: 400;
+  overflow: hidden;
 }
 
 ul li a {
@@ -597,6 +598,7 @@ ul li a {
   width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .homebg {
@@ -644,6 +646,22 @@ ul li a {
 @media (min-width: 1024px) {
   .crewbg {
     background-image: url('./assets/crew/background-crew-desktop.jpg');
+  }
+}
+
+.techbg {
+  background-image: url('./assets/technology/background-technology-mobile.jpg');
+}
+
+@media (min-width: 768px) {
+  .techbg {
+    background-image: url('./assets/technology/background-technology-tablet.jpg');
+  }
+}
+
+@media (min-width: 1024px) {
+  .techbg {
+    background-image: url('./assets/technology/background-technology-desktop.jpg');
   }
 }
 
@@ -1057,6 +1075,42 @@ ul li span {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.dotpag {
+  display: block;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: rgb(255 255 255 / 0.3);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.dotpag:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .dotpag {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.active-dotpag {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1084,6 +1138,10 @@ ul li span {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-10 {
@@ -1122,6 +1180,14 @@ ul li span {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
 .max-w-\[410px\] {
   max-width: 410px;
 }
@@ -1144,6 +1210,10 @@ ul li span {
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-2 {
@@ -1190,6 +1260,14 @@ ul li span {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -1265,6 +1343,10 @@ ul li span {
     margin-top: 3.5rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1289,8 +1371,20 @@ ul li span {
     width: 13rem;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 
   .md\:py-9 {
@@ -1328,8 +1422,29 @@ ul li span {
     margin-right: auto;
   }
 
+  .lg\:ml-auto {
+    margin-left: auto;
+  }
+
+  .lg\:mr-auto {
+    margin-right: auto;
+  }
+
   .lg\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .lg\:w-full {
@@ -1344,6 +1459,14 @@ ul li span {
     flex-direction: row;
   }
 
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
   .lg\:items-start {
     align-items: flex-start;
   }
@@ -1354,6 +1477,10 @@ ul li span {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 
   .lg\:p-0 {
