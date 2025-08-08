@@ -33,6 +33,7 @@
     font-weight: 400;
     @apply overflow-hidden;
   }
+
   ul li a {
     @apply uppercase;
   }
@@ -68,7 +69,7 @@
   }
 
   .mobile-nav-style {
-    @apply absolute h-full w-64 glassmorphism right-0 flex flex-col gap-12 pl-8 hiddennav md:hidden;
+    @apply absolute h-full w-64 glassmorphism right-0 flex flex-col gap-12 pl-8  md:hidden;
   }
 
   nav {
